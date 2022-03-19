@@ -20,5 +20,11 @@ city = city.concat(a)
 console.log('added a array into city', city)
 
 //Sort this array in descending order
-city = city.sort()
-console.log('sorted array into descending', city)
+a= city.sort()
+a.reverse()
+console.log('sorted array into descending', a)
+
+
+//or
+city.sort(function(a, b){return b-a});
+console.log('sorted array into descending by another method', city)
